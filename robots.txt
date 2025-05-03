@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sachinbyahut.github.io/sarkariresult.web/sitemap.xml
