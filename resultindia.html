@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result India - Sarkari Result Style</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #b80000; color: white; padding: 15px 20px; text-align: center; }
+    nav { background: #333; overflow: auto; display: flex; flex-wrap: wrap; }
+    nav a { flex: 1; padding: 14px 20px; color: white; text-decoration: none; text-align: center; cursor: pointer; }
+    nav a:hover { background: #555; }
+    .container { display: flex; flex-wrap: wrap; margin: 20px; }
+    .main { flex: 3; padding: 20px; background: white; margin-right: 10px; min-width: 280px; }
+    .sidebar { flex: 1; padding: 20px; background: white; min-width: 200px; }
+    footer { background: #222; color: white; text-align: center; padding: 10px 0; margin-top: 20px; }
+    .listing { padding: 10px; border-bottom: 1px solid #ccc; }
+    .listing:hover { background: #f9f9f9; cursor: pointer; }
+    .ad-placeholder { background: #e3e3e3; text-align: center; padding: 20px; margin: 10px 0; }
+    .hidden { display: none; }
+    .listing a { text-decoration: none; color: black; display: block; }
+    .listing a:hover { text-decoration: underline; }
+    .apply-link { font-size: 0.9em; color: blue; display: block; margin-top: 5px; }
+
+    @media screen and (max-width: 768px) {
+      .container { flex-direction: column; }
+      .main, .sidebar { margin: 0 0 10px 0; }
+      nav a { flex: 100%; border-top: 1px solid #444; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Result India</h1>
+    <p>Sarkari Result | Admit Card | Yojna | Jobs Updates</p>
+  </header>
+  <nav>
+    <a onclick="showCategory('home')">Home</a>
+    <a onclick="showCategory('jobs')">Latest Jobs</a>
+    <a onclick="showCategory('admit')">Admit Card</a>
+    <a onclick="showCategory('results')">Results</a>
+    <a onclick="showCategory('yojna')">Yojna</a>
+    <a onclick="showCategory('syllabus')">Syllabus</a>
+    <a onclick="showCategory('answerkey')">Answer Key</a>
+  </nav>
+  <div class="container">
+    <div class="main">
+      <div id="home" class="category-section">
+        <h2>Welcome to Result India</h2>
+        <p>Select a category from above to view the latest updates.</p>
+      </div>
+
+      <div id="jobs" class="category-section hidden">
+        <h2>Latest Jobs</h2>
+        <div class="listing">
+          <a href="#">UP Police Constable Recruitment 2025</a>
+          <a href="https://uppbpb.gov.in" class="apply-link" target="_blank">Apply Now</a>
+        </div>
+        <div class="listing">
+          <a href="#">SSC CHSL Recruitment 2025</a>
+          <a href="https://ssc.nic.in" class="apply-link" target="_blank">Apply Now</a>
+        </div>
+        <div class="listing">
+          <a href="#">Railway Group D Bharti 2025</a>
+          <a href="https://indianrailways.gov.in" class="apply-link" target="_blank">Apply Now</a>
+        </div>
+        <div class="listing">
+          <a href="#">Indian Navy Agniveer 2025</a>
+          <a href="https://joinindiannavy.gov.in" class="apply-link" target="_blank">Apply Now</a>
+        </div>
+        <div class="listing">
+          <a href="#">IBPS PO Recruitment 2025</a>
+          <a href="https://ibps.in" class="apply-link" target="_blank">Apply Now</a>
+        </div>
+      </div>
+
+      <div id="admit" class="category-section hidden">
+        <h2>Admit Card</h2>
+        <div class="listing">
+          <a href="#">UP Police Constable Admit Card</a>
+          <a href="https://uppbpb.gov.in" class="apply-link" target="_blank">Download Admit Card</a>
+        </div>
+        <div class="listing">
+          <a href="#">SSC GD Admit Card 2025</a>
+          <a href="https://ssc.nic.in" class="apply-link" target="_blank">Download Admit Card</a>
+        </div>
+        <div class="listing">
+          <a href="#">Railway ALP Admit Card 2025</a>
+          <a href="https://indianrailways.gov.in" class="apply-link" target="_blank">Download Admit Card</a>
+        </div>
+      </div>
+
+      <div id="results" class="category-section hidden">
+        <h2>Exam Results</h2>
+        <div class="listing">
+          <a href="#">UP Board Class 10th Result 2025</a>
+          <a href="https://upresults.nic.in" class="apply-link" target="_blank">View Result</a>
+        </div>
+        <div class="listing">
+          <a href="#">SSC CGL Tier 1 Result 2024</a>
+          <a href="https://ssc.nic.in" class="apply-link" target="_blank">View Result</a>
+        </div>
+        <div class="listing">
+          <a href="#">NDA 1 Result 2025</a>
+          <a href="https://upsc.gov.in" class="apply-link" target="_blank">View Result</a>
+        </div>
+        <div class="listing">
+          <a href="#">CDS 1 Result 2025</a>
+          <a href="https://upsc.gov.in" class="apply-link" target="_blank">View Result</a>
+        </div>
+        <div class="listing">
+          <a href="#">CTET January 2025 Result</a>
+          <a href="https://ctet.nic.in" class="apply-link" target="_blank">View Result</a>
+        </div>
+      </div>
+
+      <div id="yojna" class="category-section hidden">
+        <h2>Government Yojnas</h2>
+        <div class="listing">
+          <a href="#">PM Kisan Samman Nidhi Yojna</a>
+          <a href="https://pmkisan.gov.in" class="apply-link" target="_blank">Apply / Check Status</a>
+        </div>
+        <div class="listing">
+          <a href="#">Ayushman Bharat Yojna</a>
+          <a href="https://pmjay.gov.in" class="apply-link" target="_blank">Apply Now</a>
+        </div>
+      </div>
+
+      <div id="syllabus" class="category-section hidden">
+        <h2>Syllabus</h2>
+        <div class="listing">
+          <a href="#">UPPSC PCS Pre Exam Syllabus</a>
+          <a href="https://uppsc.up.nic.in" class="apply-link" target="_blank">Download Syllabus</a>
+        </div>
+        <div class="listing">
+          <a href="#">SSC CHSL Syllabus</a>
+          <a href="https://ssc.nic.in" class="apply-link" target="_blank">Download Syllabus</a>
+        </div>
+      </div>
+
+      <div id="answerkey" class="category-section hidden">
+        <h2>Answer Key</h2>
+        <div class="listing">
+          <a href="#">SSC CGL 2024 Answer Key</a>
+          <a href="https://ssc.nic.in" class="apply-link" target="_blank">Download Answer Key</a>
+        </div>
+        <div class="listing">
+          <a href="#">CTET January 2025 Answer Key</a>
+          <a href="https://ctet.nic.in" class="apply-link" target="_blank">Download Answer Key</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <h3>🔗 Important Links</h3>
+      <ul>
+        <li><a href="#">Admit Card</a></li>
+        <li><a href="#">Exam Syllabus</a></li>
+        <li><a href="#">Previous Year Papers</a></li>
+        <li><a href="#">Answer Keys</a></li>
+      </ul>
+      <div class="ad-placeholder">
+        <!-- Replace with your AdSense script -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+            data-ad-slot="1234567890"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Result India. All Rights Reserved.</p>
+    <p><a href="#" style="color:white;">Disclaimer</a> | <a href="#" style="color:white;">Privacy Policy</a></p>
+  </footer>
+
+  <script>
+    function showCategory(categoryId) {
+      const sections = document.querySelectorAll('.category-section');
+      sections.forEach(section => section.classList.add('hidden'));
+      const activeSection = document.getElementById(categoryId);
+      if (activeSection) {
+        activeSection.classList.remove('hidden');
+      }
+    }
+
+    // Show home by default
+    window.onload = () => showCategory('home');
+  </script>
+</body>
+</html>
